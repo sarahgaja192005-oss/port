@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SuriJobs - Meldingen</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="top-header">
+
+    <div class="logo">
+
+      <h1>
+        <span class="red">Suri</span><span class="green">Jobs</span>
+      </h1>
+
+      <p>Bekijk al jouw meldingen en updates.</p>
+
+    </div>
+
+    <!-- SEARCH -->
+    <div class="search-box">
+
+      <span>🔍</span>
+
+      <input
+        type="text"
+        placeholder="Zoek meldingen"
+      >
+
+      <button>✕</button>
+
+    </div>
+
+    <!-- USER -->
+    <div class="user-section">
+
+      <div class="notification active-notification">
+
+        🔔
+
+        <span class="notification-count">6</span>
+
+      </div>
+
+      <div class="user-card">
+
+        <div class="avatar" id="avatar">
+          ?
+        </div>
+
+        <div class="user-info">
+
+          <h3 id="companyName">
+            Nog niet ingelogd
+          </h3>
+
+          <p>Werkgever account</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+
+    <a>Homepagina</a>
+    <a>Kandidaten</a>
+    <a>Vacatures</a>
+    <a>Sollicitaties</a>
+    <a>Diensten</a>
+    <a>Markt</a>
+    <a class="active">Meldingen</a>
+    <a>Bedrijfsprofiel</a>
+
+  </nav>
+
+  <!-- PAGE TITLE -->
+  <section class="page-title">
+
+    <div>
+
+      <h1>Meldingen</h1>
+
+      <p>
+        Alle belangrijke updates op één plek.
+      </p>
+
+    </div>
+
+    <button class="mark-read-btn">
+      Alles markeren als gelezen
+    </button>
+
+  </section>
+
+  <!-- FILTERS -->
+  <section class="filters-section">
+
+    <button class="filter-btn active-filter">
+      Alles
+    </button>
+
+    <button class="filter-btn">
+      Sollicitaties
+    </button>
+
+    <button class="filter-btn">
+      Vacatures
+    </button>
+
+    <button class="filter-btn">
+      Berichten
+    </button>
+
+    <button class="filter-btn">
+      Systeem
+    </button>
+
+  </section>
+
+  <!-- NOTIFICATIONS -->
+  <section class="notifications-container">
+
+    <!-- NOTIFICATION -->
+    <div class="notification-card unread">
+
+      <div class="notification-icon green-icon">
+        👨‍💻
+      </div>
+
+      <div class="notification-content">
+
+        <h2>
+          Nieuwe sollicitatie ontvangen
+        </h2>
+
+        <p>
+          John Smith heeft gesolliciteerd
+          op Frontend Developer.
+        </p>
+
+        <span>
+          5 minuten geleden
+        </span>
+
+      </div>
+
+      <button class="view-btn">
+        Bekijk
+      </button>
+
+    </div>
+
+    <!-- NOTIFICATION -->
+    <div class="notification-card">
+
+      <div class="notification-icon red-icon">
+        📢
+      </div>
+
+      <div class="notification-content">
+
+        <h2>
+          Vacature boost geactiveerd
+        </h2>
+
+        <p>
+          Jouw vacature staat nu bovenaan
+          in zoekresultaten.
+        </p>
+
+        <span>
+          Vandaag
+        </span>
+
+      </div>
+
+      <button class="view-btn">
+        Open
+      </button>
+
+    </div>
+
+    <!-- NOTIFICATION -->
+    <div class="notification-card unread">
+
+      <div class="notification-icon blue-icon">
+        💬
+      </div>
+
+      <div class="notification-content">
+
+        <h2>
+          Nieuw bericht ontvangen
+        </h2>
+
+        <p>
+          Maria Fernandes stuurde een bericht
+          over jouw vacature.
+        </p>
+
+        <span>
+          1 uur geleden
+        </span>
+
+      </div>
+
+      <button class="view-btn">
+        Lees
+      </button>
+
+    </div>
+
+    <!-- NOTIFICATION -->
+    <div class="notification-card">
+
+      <div class="notification-icon yellow-icon">
+        ⚙️
+      </div>
+
+      <div class="notification-content">
+
+        <h2>
+          Systeem update
+        </h2>
+
+        <p>
+          Nieuwe recruitment tools zijn nu
+          beschikbaar in de markt.
+        </p>
+
+        <span>
+          Gisteren
+        </span>
+
+      </div>
+
+      <button class="view-btn">
+        Bekijk
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- PREMIUM -->
+  <section class="premium-section">
+
+    <div class="premium-left">
+
+      <h2>
+        Mis geen belangrijke updates
+      </h2>
+
+      <p>
+        Activeer premium meldingen en ontvang
+        realtime updates van kandidaten.
+      </p>
+
+      <button>
+        Bekijk premium →
+      </button>
+
+    </div>
+
+    <div class="premium-right">
+      🔔
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="help">
+
+      <div class="help-icon">
+        🎧
+      </div>
+
+      <div>
+
+        <h3>Hulp nodig?</h3>
+
+        <p>
+          Ons team staat klaar om je te helpen.
+        </p>
+
+      </div>
+
+    </div>
+
+    <button class="contact-btn">
+      Neem contact op
+    </button>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

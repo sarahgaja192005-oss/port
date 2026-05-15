@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>SuriJobs Werkgever Vacatures</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="top-header">
+
+    <div class="logo">
+      <h1>
+        <span class="red">Suri</span><span class="green">Jobs</span>
+      </h1>
+
+      <p>Vind talent. Bouw aan de toekomst.</p>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="search-box">
+
+      <span>🔍</span>
+
+      <input
+        type="text"
+        placeholder="Zoek kandidaten / branche"
+      >
+
+      <button>✕</button>
+
+    </div>
+
+    <!-- USER -->
+    <div class="user-section">
+
+      <div class="notification">
+        🔔
+        <span class="notification-count">2</span>
+      </div>
+
+      <div class="user-card">
+
+        <div class="avatar" id="avatar">
+          ?
+        </div>
+
+        <div class="user-info">
+
+          <h3 id="companyName">
+            Nog niet ingelogd
+          </h3>
+
+          <p>Werkgever account</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+
+    <a>Homepagina</a>
+    <a>Kandidaten</a>
+    <a class="active">Vacatures</a>
+    <a>Sollicitaties</a>
+    <a>Diensten</a>
+    <a>Markt</a>
+    <a>Meldingen</a>
+    <a>Bedrijfsprofiel</a>
+
+  </nav>
+
+  <!-- PAGE TITLE -->
+  <section class="page-title">
+
+    <div>
+      <h1>Vacatures beheren</h1>
+
+      <p>
+        Plaats, beheer en monitor jouw vacatures.
+      </p>
+    </div>
+
+    <button class="new-job-btn">
+      + Nieuwe vacature
+    </button>
+
+  </section>
+
+  <!-- FILTERS -->
+  <section class="filters-section">
+
+    <button class="filter-btn active-filter">
+      Alle vacatures
+    </button>
+
+    <button class="filter-btn">
+      Actief
+    </button>
+
+    <button class="filter-btn">
+      Gesloten
+    </button>
+
+    <button class="filter-btn">
+      Concepten
+    </button>
+
+  </section>
+
+  <!-- JOB LIST -->
+  <section class="jobs-container">
+
+    <!-- CARD -->
+    <div class="job-card">
+
+      <div class="job-top">
+
+        <div>
+
+          <h2>Frontend Developer</h2>
+
+          <p class="job-location">
+            ICT • Paramaribo
+          </p>
+
+        </div>
+
+        <span class="status active-status">
+          Actief
+        </span>
+
+      </div>
+
+      <div class="job-info">
+
+        <div class="info-box">
+          <h3>12</h3>
+          <p>Sollicitaties</p>
+        </div>
+
+        <div class="info-box">
+          <h3>145</h3>
+          <p>Weergaven</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Fulltime</h3>
+          <p>Type werk</p>
+        </div>
+
+      </div>
+
+      <div class="job-actions">
+
+        <button class="green-btn">
+          Bewerken
+        </button>
+
+        <button class="red-btn">
+          Bekijk sollicitaties
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- CARD -->
+    <div class="job-card">
+
+      <div class="job-top">
+
+        <div>
+
+          <h2>Marketing Specialist</h2>
+
+          <p class="job-location">
+            Marketing • Wanica
+          </p>
+
+        </div>
+
+        <span class="status closed-status">
+          Gesloten
+        </span>
+
+      </div>
+
+      <div class="job-info">
+
+        <div class="info-box">
+          <h3>8</h3>
+          <p>Sollicitaties</p>
+        </div>
+
+        <div class="info-box">
+          <h3>97</h3>
+          <p>Weergaven</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Parttime</h3>
+          <p>Type werk</p>
+        </div>
+
+      </div>
+
+      <div class="job-actions">
+
+        <button class="green-btn">
+          Bewerken
+        </button>
+
+        <button class="red-btn">
+          Herplaatsen
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- CARD -->
+    <div class="job-card">
+
+      <div class="job-top">
+
+        <div>
+
+          <h2>Klantenservice Medewerker</h2>
+
+          <p class="job-location">
+            Service • Paramaribo
+          </p>
+
+        </div>
+
+        <span class="status draft-status">
+          Concept
+        </span>
+
+      </div>
+
+      <div class="job-info">
+
+        <div class="info-box">
+          <h3>0</h3>
+          <p>Sollicitaties</p>
+        </div>
+
+        <div class="info-box">
+          <h3>0</h3>
+          <p>Weergaven</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Fulltime</h3>
+          <p>Type werk</p>
+        </div>
+
+      </div>
+
+      <div class="job-actions">
+
+        <button class="green-btn">
+          Bewerken
+        </button>
+
+        <button class="red-btn">
+          Publiceren
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PREMIUM -->
+  <section class="premium-section">
+
+    <div class="premium-left">
+
+      <h2>
+        Boost jouw vacatures
+      </h2>
+
+      <p>
+        Plaats vacatures bovenaan en bereik
+        sneller de juiste kandidaten.
+      </p>
+
+      <button>
+        Bekijk premium →
+      </button>
+
+    </div>
+
+    <div class="premium-right">
+      🚀
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="help">
+
+      <div class="help-icon">
+        🎧
+      </div>
+
+      <div>
+
+        <h3>Hulp nodig?</h3>
+
+        <p>
+          Ons team staat klaar om je te helpen.
+        </p>
+
+      </div>
+
+    </div>
+
+    <button class="contact-btn">
+      Neem contact op
+    </button>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

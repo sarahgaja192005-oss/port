@@ -1,0 +1,387 @@
+<!-- kandidaten-homepage.html -->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SuriJobs Kandidaat</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="candidate-body">
+
+  <!-- HEADER -->
+  <header class="top-header">
+
+    <div class="logo">
+      <h1>
+        <span class="red">Suri</span><span class="green">Jobs</span>
+      </h1>
+
+      <p>Vind jouw ideale baan in Suriname.</p>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="search-box">
+      <span>🔍</span>
+
+      <input
+        type="text"
+        placeholder="Zoek vacatures / bedrijven"
+      >
+
+      <button>✕</button>
+    </div>
+
+    <!-- USER -->
+    <div class="user-section">
+
+      <div class="notification">
+        🔔
+        <span class="notification-count">2</span>
+      </div>
+
+      <div class="user-card">
+
+        <div class="avatar" id="candidateAvatar">
+          ?
+        </div>
+
+        <div class="user-info">
+          <h3 id="candidateName">
+            Nog niet ingelogd
+          </h3>
+
+          <p>Kandidaat account</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+
+    <a class="active">Homepagina</a>
+    <a>Vacatures</a>
+    <a>Diensten</a>
+    <a>Markt</a>
+    <a>Meldingen</a>
+    <a>Profiel</a>
+
+  </nav>
+
+  <!-- HERO -->
+  <section class="candidate-hero">
+
+    <!-- LEFT -->
+    <div class="candidate-hero-card">
+
+      <h2>
+        Hallo
+        <span id="welcomeCandidate">
+          Kandidaat
+        </span>
+      </h2>
+
+      <p>
+        Ontdek vacatures die passen bij jouw
+        vaardigheden en interesses.
+        Bouw jouw profiel op en word sneller
+        gevonden door werkgevers.
+      </p>
+
+      <div class="hero-buttons">
+
+        <button class="primary-btn">
+          Vacatures bekijken
+        </button>
+
+        <button class="secondary-btn">
+          Profiel aanmaken
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="candidate-image-box">
+
+      <div class="floating-card">
+        💼 Nieuwe vacature match
+      </div>
+
+      <div class="candidate-circle">
+        👤
+      </div>
+
+      <div class="floating-card bottom-card">
+        ⭐ 12 bedrijven bekeken jouw profiel
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- QUICK ACTIONS -->
+  <section class="quick-actions">
+
+    <h2>Snelle acties</h2>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <div class="icon">💼</div>
+
+        <h3>Vacatures</h3>
+
+        <p>
+          Bekijk nieuwe vacatures en solliciteer
+          eenvoudig online.
+        </p>
+
+        <span>→</span>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon">📝</div>
+
+        <h3>CV Builder</h3>
+
+        <p>
+          Maak een professioneel CV dat
+          werkgevers direct opvalt.
+        </p>
+
+        <span>→</span>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon">🔔</div>
+
+        <h3>Job Alerts</h3>
+
+        <p>
+          Ontvang meldingen van vacatures
+          die bij jou passen.
+        </p>
+
+        <span>→</span>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon">🛍️</div>
+
+        <h3>Markt</h3>
+
+        <p>
+          Boost jouw profiel met premium
+          tools en pakketten.
+        </p>
+
+        <span>→</span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+
+    <div class="stats-header">
+
+      <h2>Jouw overzicht</h2>
+
+      <button>📅 Deze maand</button>
+
+    </div>
+
+    <div class="stats-grid">
+
+      <div class="stat-card">
+        <h1>18</h1>
+        <p>Sollicitaties</p>
+      </div>
+
+      <div class="stat-card">
+        <h1>42</h1>
+        <p>Profielweergaven</p>
+      </div>
+
+      <div class="stat-card">
+        <h1>9</h1>
+        <p>Opgeslagen vacatures</p>
+      </div>
+
+      <div class="stat-card">
+        <h1>5</h1>
+        <p>Nieuwe matches</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FEATURED -->
+  <section class="featured-section">
+
+    <div class="featured-left">
+
+      <h2>
+        Maak jouw profiel sterker en val op!
+      </h2>
+
+      <p>
+        Gebruik onze slimme tools om sneller
+        gevonden te worden door werkgevers.
+      </p>
+
+      <button>
+        Ontdek premium →
+      </button>
+
+    </div>
+
+    <div class="featured-right">
+      🚀
+    </div>
+
+  </section>
+
+  <!-- RECENT JOBS -->
+  <section class="jobs-section">
+
+    <div class="jobs-header">
+
+      <h2>Nieuwste vacatures</h2>
+
+      <button>Bekijk alles</button>
+
+    </div>
+
+    <div class="jobs-grid">
+
+      <div class="job-card">
+
+        <h3>Frontend Developer</h3>
+
+        <p>ICT • Paramaribo</p>
+
+        <span>Fulltime</span>
+
+        <button>Solliciteer</button>
+
+      </div>
+
+      <div class="job-card">
+
+        <h3>Marketing Specialist</h3>
+
+        <p>Marketing • Wanica</p>
+
+        <span>Parttime</span>
+
+        <button>Solliciteer</button>
+
+      </div>
+
+      <div class="job-card">
+
+        <h3>Klantenservice Medewerker</h3>
+
+        <p>Service • Paramaribo</p>
+
+        <span>Fulltime</span>
+
+        <button>Solliciteer</button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="help">
+
+      <div class="help-icon">
+        🎧
+      </div>
+
+      <div>
+
+        <h3>Hulp nodig?</h3>
+
+        <p>
+          Ons team staat klaar om je te helpen.
+        </p>
+
+      </div>
+
+    </div>
+
+    <button class="contact-btn">
+      Neem contact op
+    </button>
+
+  </footer>
+
+  <script>
+
+    /*
+      Later vervangen met Firebase Authentication
+    */
+
+    const loggedIn = false;
+
+    const candidateData = {
+      fullName: "John Doe",
+      initials: "JD"
+    };
+
+    if(loggedIn){
+
+      document.getElementById("candidateName").innerText =
+        candidateData.fullName;
+
+      document.getElementById("welcomeCandidate").innerText =
+        candidateData.fullName;
+
+      document.getElementById("candidateAvatar").innerText =
+        candidateData.initials;
+
+    }else{
+
+      document.getElementById("candidateName").innerText =
+        "Nog niet ingelogd";
+
+      document.getElementById("welcomeCandidate").innerText =
+        "Kandidaat";
+
+      document.getElementById("candidateAvatar").innerText =
+        "?";
+
+    }
+
+  </script>
+
+</body>
+</html>
