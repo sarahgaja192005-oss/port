@@ -1,0 +1,73 @@
+.page-main { background: var(--bg-alt); }
+
+.timeline {
+    position: relative; padding-left: 0;
+    max-width: 680px; margin: 0 auto;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 100px; top: 10px; bottom: 10px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--pink), var(--pink-pale));
+    border-radius: 2px;
+}
+
+.tl-item {
+    display: grid; grid-template-columns: 100px 1fr;
+    gap: 0 40px; margin-bottom: 52px; position: relative;
+}
+.tl-item:last-child { margin-bottom: 0; }
+.tl-item::before {
+    content: '';
+    position: absolute;
+    left: calc(100px + 20px - 6px); top: 4px;
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--pink);
+    border: 3px solid var(--bg-alt);
+    box-shadow: 0 0 0 2.5px var(--pink), 0 0 14px rgba(247, 37, 133, 0.3);
+}
+
+.tl-year {
+    font-size: 11px; font-weight: 700;
+    color: var(--pink);
+    text-align: right; padding-top: 6px; line-height: 1.4;
+    letter-spacing: 0.4px;
+}
+
+/* Card wrapper for each timeline entry */
+.tl-content {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px 26px;
+    box-shadow: var(--shadow-xs);
+    transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s;
+}
+.tl-content:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateX(5px);
+    border-color: var(--pink);
+}
+
+.tl-content h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px; font-weight: 700;
+    color: var(--text); margin-bottom: 5px;
+}
+.tl-content span {
+    font-size: 13px; color: var(--muted);
+    font-weight: 500;
+}
+.tl-content p {
+    font-size: 14px; color: var(--text-2);
+    margin-top: 10px; line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    .timeline::before { left: 72px; }
+    .tl-item { grid-template-columns: 72px 1fr; gap: 0 28px; }
+    .tl-item::before { left: calc(72px + 14px - 6px); }
+    .tl-year { font-size: 10px; padding-top: 8px; }
+    .tl-content { padding: 16px 18px; }
+}

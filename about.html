@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sarah Gajapersad | About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/about.css" />
+</head>
+<body data-current="about">
+
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+<div id="loader"><div class="loader-heart"></div></div>
+
+<nav id="navbar">
+    <a class="nav-logo" href="index.html">Sarah G<em>.</em></a>
+    <div class="nav-links" id="navLinks">
+        <a href="index.html"    data-page="home"     data-i18n="nav_home">Home</a>
+        <a href="about.html"    data-page="about"    data-i18n="nav_about">About</a>
+        <a href="skills.html"   data-page="skills"   data-i18n="nav_skills">Skills</a>
+        <a href="projects.html" data-page="projects" data-i18n="nav_projects">Projects</a>
+        <a href="journey.html"  data-page="journey"  data-i18n="nav_journey">Journey</a>
+        <a href="contact.html"  data-page="contact"  data-i18n="nav_contact">Contact</a>
+    </div>
+    <div class="nav-right">
+        <div id="langToggle">
+            <div class="lang-btn active" data-lang="en">EN</div>
+            <div class="lang-btn"        data-lang="nl">NL</div>
+        </div>
+        <div class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<main class="page-main">
+    <div class="container">
+        <div class="eyebrow">
+            <span class="eyebrow-line"></span>
+            <p class="section-label" data-i18n="about_label">Get to know me</p>
+            <span class="eyebrow-line"></span>
+        </div>
+        <h2 class="section-title" data-i18n="about_title">About <em>Me</em></h2>
+
+        <div class="about-grid">
+            <div class="about-img-wrap reveal">
+                <div class="polaroid">
+                    <img class="about-photo" src="images/sarah.jpg" alt="Sarah Gajapersad" />
+                    <p class="polaroid-caption">Sarah 🇸🇷</p>
+                </div>
+                <div class="badge-float" data-i18n="about_badge">🇸🇷 Based in Suriname</div>
+                <div class="deco-dots"></div>
+            </div>
+            <div class="about-text reveal reveal-d1">
+                <h3 data-i18n="about_greeting">Hi, I'm Sarah! 👋</h3>
+                <p data-i18n="about_p1">I'm a passionate and self-driven full stack developer from Suriname, building modern and user-friendly digital products. I love turning ideas into clean, functional experiences.</p>
+                <p data-i18n="about_p2">My mission is to become a professional software engineer who creates impactful solutions — from elegant frontends to scalable backends.</p>
+                <div class="about-stats">
+                    <div class="stat"><div class="num">2+</div><div class="lbl" data-i18n="about_stat1">Projects</div></div>
+                    <div class="stat"><div class="num">5+</div><div class="lbl" data-i18n="about_stat2">Tech skills</div></div>
+                    <div class="stat"><div class="num">1</div><div class="lbl" data-i18n="about_stat3">Happy dev 😄</div></div>
+                </div>
+                <div class="btn-group">
+                    <a href="contact.html" class="btn btn-pink">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span data-i18n="about_connect">Let's Connect</span>
+                    </a>
+                    <a href="../resume.pdf" class="btn btn-ghost" download>
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                        <span data-i18n="about_resume">Resume</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 <strong class="footer-name">Sarah Gajapersad</strong> · Made with <span class="footer-heart">💗</span> in Suriname</p>
+    <p class="footer-sub"><a href="index.html" data-i18n="footer_top">Back to top ↑</a></p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
