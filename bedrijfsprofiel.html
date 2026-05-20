@@ -8,13 +8,14 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
-
 <body>
 
   <!-- HEADER -->
-  <header class="top-header">
+
+  <header class="header">
 
     <div class="logo">
 
@@ -22,49 +23,33 @@
         <span class="red">Suri</span><span class="green">Jobs</span>
       </h1>
 
-      <p>Bouw jouw bedrijfsprofiel op SuriJobs.</p>
+      <p>Werkgevers Dashboard</p>
 
     </div>
 
-    <!-- SEARCH -->
     <div class="search-box">
 
-      <span>🔍</span>
+      <i class="fa fa-search"></i>
 
-      <input
-        type="text"
-        placeholder="Zoek instellingen / profiel"
-      >
-
-      <button>✕</button>
+      <input type="text" placeholder="Zoek kandidaten of vacatures">
 
     </div>
 
-    <!-- USER -->
-    <div class="user-section">
+    <div class="header-right">
 
-      <div class="notification">
+      <button class="notification-btn">
+        <i class="fa-solid fa-bell"></i>
+      </button>
 
-        🔔
+      <div class="profile-box">
 
-        <span class="notification-count">1</span>
-
-      </div>
-
-      <div class="user-card">
-
-        <div class="avatar" id="avatar">
-          ?
+        <div class="profile-icon">
+          W
         </div>
 
-        <div class="user-info">
-
-          <h3 id="companyName">
-            Nog niet ingelogd
-          </h3>
-
-          <p>Werkgever account</p>
-
+        <div>
+          <h4>Werkgever</h4>
+          <p>Bedrijfsaccount</p>
         </div>
 
       </div>
@@ -73,243 +58,287 @@
 
   </header>
 
-  <!-- NAVIGATION -->
+  <!-- NAVBAR -->
+
   <nav class="navbar">
 
-    <a>Homepagina</a>
-    <a>Kandidaten</a>
-    <a>Vacatures</a>
-    <a>Sollicitaties</a>
-    <a>Diensten</a>
-    <a>Markt</a>
-    <a>Meldingen</a>
-    <a class="active">Bedrijfsprofiel</a>
+    <a href="#">Homepage</a>
+    <a href="#">Vacatures</a>
+    <a href="#">Kandidaten</a>
+    <a href="#">Meldingen</a>
+    <a href="#" class="active">Bedrijfsprofiel</a>
+
+    <!-- SETTINGS -->
+
+    <div class="settings-container">
+
+      <button class="settings-btn" id="settingsBtn">
+
+        Instellingen
+
+        <i class="fa-solid fa-chevron-down"></i>
+
+      </button>
+
+      <div class="settings-menu" id="settingsMenu">
+
+        <a href="#">
+          <i class="fa-solid fa-user"></i>
+          Account instellingen
+        </a>
+
+        <a href="#">
+          <i class="fa-solid fa-lock"></i>
+          Privacy & beveiliging
+        </a>
+
+        <a href="#">
+          <i class="fa-solid fa-bell"></i>
+          Meldingen
+        </a>
+
+        <a href="#">
+          <i class="fa-solid fa-language"></i>
+          Taal wijzigen
+        </a>
+
+        <a href="#">
+          <i class="fa-solid fa-building"></i>
+          Bedrijfs instellingen
+        </a>
+
+        <a href="#">
+          <i class="fa-solid fa-credit-card"></i>
+          Betalingen
+        </a>
+
+        <a href="#">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+          Donkere modus
+        </a>
+
+        <a href="#">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          Uitloggen
+        </a>
+
+      </div>
+
+    </div>
 
   </nav>
 
   <!-- HERO -->
-  <section class="profile-hero">
+
+  <section class="hero">
 
     <div class="hero-left">
 
-      <div class="company-logo" id="companyLogo">
-        ?
-      </div>
-
-      <div>
-
-        <h1 id="heroCompanyName">
-          Nog niet ingelogd
-        </h1>
-
-        <p id="heroCompanyText">
-          Log in om jouw bedrijfsprofiel te bekijken.
-        </p>
-
-      </div>
-
-    </div>
-
-    <button class="edit-btn">
-      Profiel bewerken
-    </button>
-
-  </section>
-
-  <!-- PROFILE GRID -->
-  <section class="profile-grid">
-
-    <!-- ABOUT -->
-    <div class="profile-card">
-
-      <h2>Over het bedrijf</h2>
-
-      <p id="aboutText">
-
-        Geen bedrijfsinformatie beschikbaar.
-        Log in om jouw informatie te tonen.
-
-      </p>
-
-    </div>
-
-    <!-- INFO -->
-    <div class="profile-card">
-
-      <h2>Bedrijfsgegevens</h2>
-
-      <div class="info-list">
-
-        <div class="info-item">
-
-          <span>🌍 Website</span>
-
-          <p id="websiteText">
-            Niet beschikbaar
-          </p>
-
-        </div>
-
-        <div class="info-item">
-
-          <span>📍 Locatie</span>
-
-          <p id="locationText">
-            Niet beschikbaar
-          </p>
-
-        </div>
-
-        <div class="info-item">
-
-          <span>👥 Werknemers</span>
-
-          <p id="employeesText">
-            Niet beschikbaar
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- VACATURES -->
-    <div class="profile-card">
-
-      <h2>Actieve vacatures</h2>
-
-      <div class="vacancy-item">
-
-        <div>
-
-          <h3>Frontend Developer</h3>
-
-          <p>Niet gepubliceerd</p>
-
-        </div>
-
-        <button>
-          Bekijk
-        </button>
-
-      </div>
-
-      <div class="vacancy-item">
-
-        <div>
-
-          <h3>Marketing Specialist</h3>
-
-          <p>Niet gepubliceerd</p>
-
-        </div>
-
-        <button>
-          Bekijk
-        </button>
-
-      </div>
-
-    </div>
-
-    <!-- STATS -->
-    <div class="profile-card">
-
-      <h2>Statistieken</h2>
-
-      <div class="stats-grid">
-
-        <div class="stat-box">
-
-          <h1>0</h1>
-
-          <p>Vacatures</p>
-
-        </div>
-
-        <div class="stat-box">
-
-          <h1>0</h1>
-
-          <p>Sollicitaties</p>
-
-        </div>
-
-        <div class="stat-box">
-
-          <h1>0</h1>
-
-          <p>Kandidaten</p>
-
-        </div>
-
-        <div class="stat-box">
-
-          <h1>0</h1>
-
-          <p>Reviews</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- PREMIUM -->
-  <section class="premium-section">
-
-    <div class="premium-left">
-
-      <h2>
-        Laat jouw bedrijf groeien
-      </h2>
+      <h2>Bedrijfsprofiel beheren</h2>
 
       <p>
-        Activeer premium functies voor meer zichtbaarheid
-        en betere recruitment tools.
+        Werk uw bedrijfsinformatie bij, upload uw logo,
+        beheer vacatures en presenteer uw bedrijf professioneel
+        aan kandidaten in Suriname.
       </p>
 
-      <button>
-        Bekijk premium →
+      <button class="hero-btn">
+        Profiel bewerken
       </button>
 
     </div>
 
-    <div class="premium-right">
-      🏢
+    <div class="hero-right">
+
+      <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop" alt="">
+
     </div>
 
   </section>
 
-  <!-- FOOTER -->
-  <footer>
+  <!-- PROFILE SECTION -->
 
-    <div class="help">
+  <section class="profile-section">
 
-      <div class="help-icon">
-        🎧
+    <div class="company-card">
+
+      <div class="company-top">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+
+        <div>
+
+          <h2>SuriTech Solutions</h2>
+
+          <p>IT & Software Bedrijf</p>
+
+          <span>
+            <i class="fa-solid fa-location-dot"></i>
+            Paramaribo, Suriname
+          </span>
+
+        </div>
+
       </div>
 
-      <div>
+      <div class="company-stats">
 
-        <h3>Hulp nodig?</h3>
+        <div class="stat-box">
+          <h3>24</h3>
+          <p>Open vacatures</p>
+        </div>
 
-        <p>
-          Ons team staat klaar om je te helpen.
-        </p>
+        <div class="stat-box">
+          <h3>1.2K</h3>
+          <p>Kandidaten bekeken</p>
+        </div>
+
+        <div class="stat-box">
+          <h3>150+</h3>
+          <p>Aangenomen werknemers</p>
+        </div>
 
       </div>
 
     </div>
 
-    <button class="contact-btn">
-      Neem contact op
-    </button>
+    <!-- PROFILE FORM -->
 
-  </footer>
+    <div class="profile-form-container">
+
+      <h2>Bedrijfsinformatie</h2>
+
+      <form class="profile-form">
+
+        <div class="input-group">
+
+          <label>Bedrijfsnaam</label>
+
+          <input type="text" placeholder="Bedrijfsnaam">
+
+        </div>
+
+        <div class="input-group">
+
+          <label>Email adres</label>
+
+          <input type="email" placeholder="bedrijf@email.com">
+
+        </div>
+
+        <div class="input-group">
+
+          <label>Telefoonnummer</label>
+
+          <input type="text" placeholder="+597 0000000">
+
+        </div>
+
+        <div class="input-group">
+
+          <label>Website</label>
+
+          <input type="text" placeholder="www.bedrijf.com">
+
+        </div>
+
+        <div class="input-group full-width">
+
+          <label>Bedrijfsbeschrijving</label>
+
+          <textarea placeholder="Vertel iets over uw bedrijf..."></textarea>
+
+        </div>
+
+        <div class="input-group full-width">
+
+          <label>Upload bedrijfslogo</label>
+
+          <input type="file">
+
+        </div>
+
+        <button type="submit" class="save-btn">
+          Wijzigingen opslaan
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="contact-section">
+
+    <h2>Contact Us</h2>
+
+    <p>
+      Heeft u hulp nodig bij uw bedrijfsprofiel?
+      Neem contact op met het SuriJobs support team.
+    </p>
+
+    <div class="contact-wrapper">
+
+      <!-- CONTACT INFO -->
+
+      <div class="contact-info">
+
+        <div class="info-box">
+
+          <i class="fa-solid fa-phone"></i>
+
+          <div>
+            <h4>Telefoon</h4>
+            <p>+597 0000000</p>
+          </div>
+
+        </div>
+
+        <div class="info-box">
+
+          <i class="fa-solid fa-envelope"></i>
+
+          <div>
+            <h4>Email</h4>
+            <p>support@surijobs.com</p>
+          </div>
+
+        </div>
+
+        <div class="info-box">
+
+          <i class="fa-solid fa-location-dot"></i>
+
+          <div>
+            <h4>Adres</h4>
+            <p>Paramaribo, Suriname</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CONTACT FORM -->
+
+      <form class="contact-form">
+
+        <input type="text" placeholder="Uw naam">
+
+        <input type="email" placeholder="Uw email">
+
+        <textarea placeholder="Uw bericht"></textarea>
+
+        <button type="submit">
+          Bericht verzenden
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
 
   <script src="script.js"></script>
 

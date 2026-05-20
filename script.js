@@ -1,446 +1,206 @@
-/*
-  Hier komt later Firebase login info.
-  Tot die tijd tonen we GEEN echte bedrijfsgegevens.
-*/
+const settingsBtn = document.getElementById("settingsBtn");
+const dropdownMenu = document.getElementById("dropdownMenu");
 
-const loggedIn = false;
+settingsBtn.addEventListener("click", () => {
+  dropdownMenu.classList.toggle("show");
+});
 
-/*
-  Simulatie van gebruiker data.
-  Later haal je dit uit Firebase Authentication
-  en Firestore database.
-*/
+window.addEventListener("click", function(e){
 
-const userData = {
-  companyName: "ABC Solutions NV",
-  avatar: "AB"
-};
-
-if(loggedIn){
-
-  document.getElementById("companyName").innerText =
-    userData.companyName;
-
-  document.getElementById("welcomeName").innerText =
-    userData.companyName;
-
-  document.getElementById("avatar").innerText =
-    userData.avatar;
-
-}else{
-
-  document.getElementById("companyName").innerText =
-    "Nog niet ingelogd";
-
-  document.getElementById("welcomeName").innerText =
-    "Werkgever";
-
-  document.getElementById("avatar").innerText =
-    "?";
-
-}
-/*
-  Later vervangen met Firebase Authentication
-*/
-
-const loggedIn = false;
-
-/*
-  Kandidaat data
-  Later uit Firebase Firestore halen
-*/
-
-const candidateData = {
-
-  fullName: "John Doe",
-
-  initials: "JD"
-
-};
-
-if(loggedIn){
-
-  document.getElementById("candidateName").innerText =
-    candidateData.fullName;
-
-  document.getElementById("welcomeCandidate").innerText =
-    candidateData.fullName;
-
-  document.getElementById("candidateAvatar").innerText =
-    candidateData.initials;
-
-}else{
-
-  document.getElementById("candidateName").innerText =
-    "Nog niet ingelogd";
-
-  document.getElementById("welcomeCandidate").innerText =
-    "Kandidaat";
-
-  document.getElementById("candidateAvatar").innerText =
-    "?";
-
-}
-/*
-  Firebase login komt later
-*/
-
-const loggedIn = false;
-
-/*
-  Werkgever data
-  Later uit Firebase halen
-*/
-
-const companyData = {
-
-  companyName: "ABC Solutions NV",
-
-  initials: "AB"
-
-};
-
-if(loggedIn){
-
-  document.getElementById("companyName").innerText =
-    companyData.companyName;
-
-  document.getElementById("avatar").innerText =
-    companyData.initials;
-
-}else{
-
-  document.getElementById("companyName").innerText =
-    "Nog niet ingelogd";
-
-  document.getElementById("avatar").innerText =
-    "?";
-
-}
-/*
-  Firebase login komt later
-*/
-
-const loggedIn = false;
-
-/*
-  Werkgever data
-  Later uit Firebase halen
-*/
-
-const companyData = {
-
-  companyName: "ABC Solutions NV",
-
-  initials: "AB"
-
-};
-
-if(loggedIn){
-
-  document.getElementById("companyName").innerText =
-    companyData.companyName;
-
-  document.getElementById("avatar").innerText =
-    companyData.initials;
-
-}else{
-
-  document.getElementById("companyName").innerText =
-    "Nog niet ingelogd";
-
-  document.getElementById("avatar").innerText =
-    "?";
-
-}
-
-/*
-  FILTER BUTTONS
-*/
-
-const filterButtons =
-  document.querySelectorAll(".filter-btn");
-
-filterButtons.forEach(button => {
-
-  button.addEventListener("click", () => {
-
-    filterButtons.forEach(btn => {
-      btn.classList.remove("active-filter");
-    });
-
-    button.classList.add("active-filter");
-
-  });
+  if(
+    !settingsBtn.contains(e.target) &&
+    !dropdownMenu.contains(e.target)
+  ){
+    dropdownMenu.classList.remove("show");
+  }
 
 });
-/*
-  Firebase login komt later
-*/
+const settingsBtn = document.getElementById("settingsBtn");
+const settingsMenu = document.getElementById("settingsMenu");
 
-const loggedIn = false;
+settingsBtn.addEventListener("click", () => {
 
-/*
-  Werkgever data
-  Later uit Firebase halen
-*/
-
-const companyData = {
-
-  companyName: "ABC Solutions NV",
-
-  initials: "AB"
-
-};
-
-if(loggedIn){
-
-  document.getElementById("companyName").innerText =
-    companyData.companyName;
-
-  document.getElementById("avatar").innerText =
-    companyData.initials;
-
-}else{
-
-  document.getElementById("companyName").innerText =
-    "Nog niet ingelogd";
-
-  document.getElementById("avatar").innerText =
-    "?";
-
-}
-
-/*
-  CATEGORY BUTTONS
-*/
-
-const categoryButtons =
-  document.querySelectorAll(".category-btn");
-
-categoryButtons.forEach(button => {
-
-  button.addEventListener("click", () => {
-
-    categoryButtons.forEach(btn => {
-      btn.classList.remove("active-category");
-    });
-
-    button.classList.add("active-category");
-
-  });
-
-});
-/*
-  Firebase login komt later
-*/
-
-const loggedIn = false;
-
-/*
-  Werkgever data
-  Later uit Firebase halen
-*/
-
-const companyData = {
-
-  companyName: "ABC Solutions NV",
-
-  initials: "AB"
-
-};
-
-if(loggedIn){
-
-  document.getElementById("companyName").innerText =
-    companyData.companyName;
-
-  document.getElementById("avatar").innerText =
-    companyData.initials;
-
-}else{
-
-  document.getElementById("companyName").innerText =
-    "Nog niet ingelogd";
-
-  document.getElementById("avatar").innerText =
-    "?";
-
-}
-
-/*
-  FILTER BUTTONS
-*/
-
-const filterButtons =
-  document.querySelectorAll(".filter-btn");
-
-filterButtons.forEach(button => {
-
-  button.addEventListener("click", () => {
-
-    filterButtons.forEach(btn => {
-      btn.classList.remove("active-filter");
-    });
-
-    button.classList.add("active-filter");
-
-  });
-
-});
-/*
-  Firebase login komt later
-*/
-
-const loggedIn = false;
-
-/*
-  Werkgever data
-  Later uit Firebase halen
-*/
-
-const companyData = {
-
-  companyName: "ABC Solutions NV",
-
-  initials: "AB"
-
-};
-
-if(loggedIn){
-
-  document.getElementById("companyName").innerText =
-    companyData.companyName;
-
-  document.getElementById("avatar").innerText =
-    companyData.initials;
-
-}else{
-
-  document.getElementById("companyName").innerText =
-    "Nog niet ingelogd";
-
-  document.getElementById("avatar").innerText =
-    "?";
-
-}
-
-/*
-  FILTER BUTTONS
-*/
-
-const filterButtons =
-  document.querySelectorAll(".filter-btn");
-
-filterButtons.forEach(button => {
-
-  button.addEventListener("click", () => {
-
-    filterButtons.forEach(btn => {
-      btn.classList.remove("active-filter");
-    });
-
-    button.classList.add("active-filter");
-
-  });
+  settingsMenu.classList.toggle("show");
 
 });
 
-/*
-  MARK AS READ
-*/
+window.addEventListener("click", function(e){
 
-const markReadButton =
-  document.querySelector(".mark-read-btn");
+  if(
+    !settingsBtn.contains(e.target) &&
+    !settingsMenu.contains(e.target)
+  ){
 
-markReadButton.addEventListener("click", () => {
+    settingsMenu.classList.remove("show");
 
-  const unreadCards =
-    document.querySelectorAll(".unread");
-
-  unreadCards.forEach(card => {
-
-    card.classList.remove("unread");
-
-  });
+  }
 
 });
-/*
-  Firebase login komt later
-*/
+const settingsBtn = document.getElementById("settingsBtn");
+const settingsMenu = document.getElementById("settingsMenu");
 
-const loggedIn = false;
+settingsBtn.addEventListener("click", () => {
 
-/*
-  Werkgever data
-  Later uit Firebase halen
-*/
+  settingsMenu.classList.toggle("show");
 
-const companyData = {
+});
 
-  companyName: "ABC Solutions NV",
+window.addEventListener("click", function(e){
 
-  initials: "AB",
+  if(
+    !settingsBtn.contains(e.target) &&
+    !settingsMenu.contains(e.target)
+  ){
 
-  about:
-    "Wij helpen bedrijven groeien met innovatieve digitale oplossingen.",
+    settingsMenu.classList.remove("show");
 
-  website:
-    "www.abcsolutions.com",
+  }
 
-  location:
-    "Paramaribo, Suriname",
+});
+const settingsBtn = document.getElementById("settingsBtn");
+const settingsMenu = document.getElementById("settingsMenu");
 
-  employees:
-    "50 - 100"
+settingsBtn.addEventListener("click", () => {
 
-};
+  settingsMenu.classList.toggle("show");
 
-/*
-  LOGIN CHECK
-*/
+});
 
-if(loggedIn){
+window.addEventListener("click", function(e){
 
-  document.getElementById("companyName").innerText =
-    companyData.companyName;
+  if(
+    !settingsBtn.contains(e.target) &&
+    !settingsMenu.contains(e.target)
+  ){
 
-  document.getElementById("heroCompanyName").innerText =
-    companyData.companyName;
+    settingsMenu.classList.remove("show");
 
-  document.getElementById("avatar").innerText =
-    companyData.initials;
+  }
 
-  document.getElementById("companyLogo").innerText =
-    companyData.initials;
+});
+const settingsBtn = document.getElementById("settingsBtn");
+const settingsMenu = document.getElementById("settingsMenu");
 
-  document.getElementById("heroCompanyText").innerText =
-    "Welkom terug op jouw bedrijfsdashboard.";
+settingsBtn.addEventListener("click", () => {
 
-  document.getElementById("aboutText").innerText =
-    companyData.about;
+  settingsMenu.classList.toggle("show");
 
-  document.getElementById("websiteText").innerText =
-    companyData.website;
+});
 
-  document.getElementById("locationText").innerText =
-    companyData.location;
+window.addEventListener("click", function(e){
 
-  document.getElementById("employeesText").innerText =
-    companyData.employees;
+  if(
+    !settingsBtn.contains(e.target) &&
+    !settingsMenu.contains(e.target)
+  ){
 
-}else{
+    settingsMenu.classList.remove("show");
 
-  document.getElementById("companyName").innerText =
-    "Nog niet ingelogd";
+  }
 
-  document.getElementById("heroCompanyName").innerText =
-    "Nog niet ingelogd";
+});
+const settingsBtn = document.getElementById("settingsBtn");
+const settingsMenu = document.getElementById("settingsMenu");
 
-  document.getElementById("avatar").innerText =
-    "?";
+settingsBtn.addEventListener("click", () => {
 
-  document.getElementById("companyLogo").innerText =
-    "?";
+  settingsMenu.classList.toggle("show");
 
-}
+});
+
+window.addEventListener("click", function(e){
+
+  if(
+    !settingsBtn.contains(e.target) &&
+    !settingsMenu.contains(e.target)
+  ){
+
+    settingsMenu.classList.remove("show");
+
+  }
+
+});
+const settingsBtn = document.getElementById("settingsBtn");
+const settingsMenu = document.getElementById("settingsMenu");
+
+settingsBtn.addEventListener("click", () => {
+
+  settingsMenu.classList.toggle("show");
+
+});
+
+window.addEventListener("click", function(e){
+
+  if(
+    !settingsBtn.contains(e.target) &&
+    !settingsMenu.contains(e.target)
+  ){
+
+    settingsMenu.classList.remove("show");
+
+  }
+
+});
+const settingsBtn = document.getElementById("settingsBtn");
+const settingsMenu = document.getElementById("settingsMenu");
+
+settingsBtn.addEventListener("click", () => {
+
+  settingsMenu.classList.toggle("show");
+
+});
+
+window.addEventListener("click", function(e){
+
+  if(
+    !settingsBtn.contains(e.target) &&
+    !settingsMenu.contains(e.target)
+  ){
+
+    settingsMenu.classList.remove("show");
+
+  }
+
+});
+const settingsBtn = document.getElementById("settingsBtn");
+const settingsMenu = document.getElementById("settingsMenu");
+
+settingsBtn.addEventListener("click", () => {
+
+  settingsMenu.classList.toggle("show");
+
+});
+
+window.addEventListener("click", function(e){
+
+  if(
+    !settingsBtn.contains(e.target) &&
+    !settingsMenu.contains(e.target)
+  ){
+
+    settingsMenu.classList.remove("show");
+
+  }
+
+});
+const settingsBtn = document.getElementById("settingsBtn");
+const settingsMenu = document.getElementById("settingsMenu");
+
+settingsBtn.addEventListener("click", () => {
+
+  settingsMenu.classList.toggle("show");
+
+});
+
+window.addEventListener("click", function(e){
+
+  if(
+    !settingsBtn.contains(e.target) &&
+    !settingsMenu.contains(e.target)
+  ){
+
+    settingsMenu.classList.remove("show");
+
+  }
+
+});

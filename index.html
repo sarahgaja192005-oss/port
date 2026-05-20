@@ -6,293 +6,193 @@
   <title>SuriJobs Werkgever</title>
 
   <link rel="stylesheet" href="style.css"/>
-
-  <!-- FONT -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
-
 <body>
 
   <!-- HEADER -->
   <header class="top-header">
 
-    <div class="logo">
-      <h1>
-        <span class="red">Suri</span><span class="green">Jobs</span>
-      </h1>
-
+    <div class="logo-section">
+      <h1><span class="red">Suri</span><span class="green">Jobs</span></h1>
       <p>Vind talent. Bouw aan de toekomst.</p>
     </div>
 
-    <!-- SEARCH -->
     <div class="search-box">
-      <span>🔍</span>
-
+      <i class="fa fa-search"></i>
       <input type="text" placeholder="Zoek kandidaten / branche">
-
-      <button>✕</button>
     </div>
 
-    <!-- USER -->
-    <div class="user-section">
+    <div class="header-right">
+      <button class="notification-btn">
+        <i class="fa-solid fa-bell"></i>
+      </button>
 
-      <div class="notification">
-        🔔
-        <span class="notification-count">3</span>
-      </div>
+      <div class="account-box">
+        <div class="account-icon">?</div>
 
-      <div class="user-card">
-
-        <div class="avatar" id="avatar">
-          ?
+        <div>
+          <h4>Nog niet ingelogd</h4>
+          <p>Werkgever account</p>
         </div>
-
-        <div class="user-info">
-          <h3 id="companyName">Nog niet ingelogd</h3>
-          <p id="accountType">Werkgever account</p>
-        </div>
-
       </div>
-
     </div>
 
   </header>
 
-  <!-- NAVIGATION -->
+  <!-- NAVBAR -->
   <nav class="navbar">
 
-    <a class="active">Homepagina</a>
-    <a>Kandidaten</a>
-    <a>Vacatures</a>
-    <a>Sollicitaties</a>
-    <a>Diensten</a>
-    <a>Markt</a>
-    <a>Meldingen</a>
-    <a>Bedrijfsprofiel</a>
+    <a href="#" class="active">Homepage</a>
+    <a href="#">Markt</a>
+    <a href="#">Plaats vacature</a>
+    <a href="#">Meldingen</a>
+    <a href="#">Bedrijfsprofiel</a>
+
+    <!-- SETTINGS BUTTON -->
+    <div class="settings-dropdown">
+
+      <button class="settings-btn" id="settingsBtn">
+        Instellingen
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+
+      <div class="dropdown-menu" id="dropdownMenu">
+
+        <a href="#"><i class="fa-solid fa-user"></i> Account</a>
+
+        <a href="#"><i class="fa-solid fa-lock"></i> Privacy</a>
+
+        <a href="#"><i class="fa-solid fa-bell"></i> Meldingen</a>
+
+        <a href="#"><i class="fa-solid fa-language"></i> Taal</a>
+
+        <a href="#"><i class="fa-solid fa-moon"></i> Donkere modus</a>
+
+        <a href="#"><i class="fa-solid fa-gear"></i> Algemene instellingen</a>
+
+        <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Uitloggen</a>
+
+      </div>
+
+    </div>
 
   </nav>
 
   <!-- HERO -->
-  <section class="hero-section">
+  <section class="hero">
 
-    <!-- LEFT -->
-    <div class="hero-card">
+    <div class="hero-left">
 
-      <h2>
-        Hallo
-        <span id="welcomeName">Werkgever</span>
-      </h2>
+      <h2>Hallo <span>Werkgever</span></h2>
 
       <p>
         Vind snel geschikte werknemers in Suriname.
-        Plaats vacatures, ontdek kandidaten en beheer
-        sollicitaties eenvoudig via SuriJobs.
+        Plaats vacatures, ontdek kandidaten en beheer sollicitaties eenvoudig via SuriJobs.
       </p>
 
-      <button class="primary-btn">
+      <button class="main-btn">
         + Nieuwe vacature plaatsen
       </button>
 
     </div>
 
-    <!-- RIGHT -->
-    <div class="hero-image">
+    <!-- MARKET -->
+    <div class="hero-right">
 
-      <div class="candidate-grid">
+      <h3>Markt</h3>
 
-        <div class="candidate"></div>
-        <div class="candidate"></div>
-        <div class="candidate"></div>
-        <div class="candidate"></div>
+      <p>Verkoop producten en diensten aan andere bedrijven.</p>
 
-      </div>
-
-      <div class="magnifier"></div>
-
-    </div>
-
-  </section>
-
-  <!-- QUICK ACTIONS -->
-  <section class="quick-actions">
-
-    <h2>Snelle acties</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <div class="icon">👥</div>
-
-        <h3>Kandidaten</h3>
-
-        <p>
-          Zoek en filter werkzoekenden op branche,
-          ervaring en locatie.
-        </p>
-
-        <span>→</span>
-      </div>
-
-      <div class="card">
-        <div class="icon">💼</div>
-
-        <h3>Vacatures</h3>
-
-        <p>
-          Plaats nieuwe vacatures en beheer
-          al jouw openstaande vacatures.
-        </p>
-
-        <span>→</span>
-      </div>
-
-      <div class="card">
-        <div class="icon">📄</div>
-
-        <h3>Sollicitaties</h3>
-
-        <p>
-          Bekijk en beheer alle sollicitaties
-          op jouw vacatures.
-        </p>
-
-        <span>→</span>
-      </div>
-
-      <div class="card">
-        <div class="icon">🧩</div>
-
-        <h3>Diensten</h3>
-
-        <p>
-          Ontdek diensten die jouw bedrijf
-          kunnen ondersteunen.
-        </p>
-
-        <span>→</span>
-      </div>
-
-      <div class="card">
-        <div class="icon">🛒</div>
-
-        <h3>Markt</h3>
-
-        <p>
-          Boost jouw bereik met promoties
-          en premium pakketten.
-        </p>
-
-        <span>→</span>
-      </div>
-
-      <div class="card">
-        <div class="icon">🏢</div>
-
-        <h3>Bedrijfsprofiel</h3>
-
-        <p>
-          Beheer jouw bedrijfspagina
-          en laat je bedrijf opvallen.
-        </p>
-
-        <span>→</span>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- STATS -->
-  <section class="stats-section">
-
-    <div class="stats-header">
-
-      <h2>Overzicht</h2>
-
-      <button>📅 Deze maand</button>
-
-    </div>
-
-    <div class="stats-grid">
-
-      <div class="stat-card">
-        <h1>128</h1>
-        <p>Sollicitaties</p>
-      </div>
-
-      <div class="stat-card">
-        <h1>456</h1>
-        <p>Profielweergaven</p>
-      </div>
-
-      <div class="stat-card">
-        <h1>8</h1>
-        <p>Actieve vacatures</p>
-      </div>
-
-      <div class="stat-card">
-        <h1>24</h1>
-        <p>Berichten</p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- BOOST -->
-  <section class="boost-section">
-
-    <div class="boost-left">
-
-      <h2>
-        Boost jouw vacatures en bereik meer talent!
-      </h2>
-
-      <p>
-        Gebruik onze premium pakketten om jouw vacatures
-        bovenaan te plaatsen en sneller de juiste kandidaten
-        te vinden.
-      </p>
-
-      <button>
-        Bekijk pakketten →
+      <button class="market-btn">
+        Naar de markt
       </button>
 
-    </div>
+      <div class="products">
 
-    <div class="boost-right">
-      🚀
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=800&auto=format&fit=crop" alt="">
+          <h4>Smart TV 55 inch</h4>
+          <span>SRD 6.500</span>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=800&auto=format&fit=crop" alt="">
+          <h4>Laptop Pro 15"</h4>
+          <span>SRD 12.500</span>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?q=80&w=800&auto=format&fit=crop" alt="">
+          <h4>Printer All-in-One</h4>
+          <span>SRD 2.800</span>
+        </div>
+
+      </div>
+
     </div>
 
   </section>
 
-  <!-- FOOTER -->
-  <footer>
+  <!-- CONTACT US -->
+  <section class="contact-section">
 
-    <div class="help">
+    <h2>Contact Us</h2>
 
-      <div class="help-icon">
-        🎧
+    <p>
+      Heb je hulp nodig of vragen over SuriJobs?
+      Neem contact met ons op.
+    </p>
+
+    <div class="contact-container">
+
+      <div class="contact-info">
+
+        <div class="info-box">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <h4>Telefoon</h4>
+            <p>+597 000 0000</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p>support@surijobs.com</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <h4>Locatie</h4>
+            <p>Paramaribo, Suriname</p>
+          </div>
+        </div>
+
       </div>
 
-      <div>
+      <!-- CONTACT FORM -->
+      <form class="contact-form">
 
-        <h3>Hulp nodig?</h3>
+        <input type="text" placeholder="Naam">
 
-        <p>
-          Ons team staat klaar om je te helpen bij al je vragen.
-        </p>
+        <input type="email" placeholder="Email">
 
-      </div>
+        <textarea placeholder="Typ uw bericht..."></textarea>
+
+        <button type="submit">
+          Bericht verzenden
+        </button>
+
+      </form>
 
     </div>
 
-    <button class="contact-btn">
-      Neem contact op
-    </button>
-
-  </footer>
+  </section>
 
   <script src="script.js"></script>
 
